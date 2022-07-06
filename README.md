@@ -8,13 +8,20 @@ Wordlist: ['1', '2', '3']
 
 * Generating 16 combinations
 * Total file size: 63 bytes
+
 =============================================================
 Output file: 
+
 1
+
 2
+
 3
+
 12
+
 21
+
 13
 31
 23
