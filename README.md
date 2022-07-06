@@ -2,31 +2,29 @@
 A script that will create a list of all possible combinations and permutations of a given set of words.
 
 <h2>Example</h2>
-=============================================================
+=============================================================  
+Wordlist: ['Cat', 'Dog', 'Fish']  
 
-Wordlist: ['1', '2', '3']
+* Generating 16 combinations  
+* Total file size: 140 bytes  
+=============================================================  
 
-* Generating 16 combinations
-* Total file size: 63 bytes
-
-=============================================================
-
-Output file:  
-1  
-2  
-3  
-12  
-21  
-13  
-31  
-23  
-32  
-123  
-132  
-213  
-231  
-312  
-321  
+Output file:    
+Cat  
+Dog  
+Fish  
+CatDog  
+DogCat  
+CatFish  
+FishCat  
+DogFish  
+FishDog  
+CatDogFish  
+CatFishDog  
+DogCatFish  
+DogFishCat  
+FishCatDog  
+FishDogCat  
 
 <h2>WARNING</h2>
 Make sure you don't try to use a list that is too big as there are no security or protective measures whatsoever, and it might try to make a file bigger 
