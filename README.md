@@ -12,27 +12,21 @@ Wordlist: ['1', '2', '3']
 =============================================================
 
 Output file: 
-
-1
-
-2
-
-3
-
-12
-
-21
-
-13
-31
-23
-32
-123
-132
-213
-231
-312
-321
+1  
+2  
+3  
+12  
+21  
+13  
+31  
+23  
+32  
+123  
+132  
+213  
+231  
+312  
+321  
 
 <h2>WARNING</h2>
 Make sure you don't try to use a list that is too big as there are no security or protective mesures whatsoever, and it might try to make a file bigger 
