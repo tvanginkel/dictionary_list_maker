@@ -2,7 +2,7 @@
 A script that will create a list of all possible combinations and permutations of a given set of words.
 
 <h2>Example</h2>
-=============================================================
+=============================================================\n
 Wordlist: ['1', '2', '3']
 
 * Generating 16 combinations
