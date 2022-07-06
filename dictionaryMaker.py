@@ -2,13 +2,6 @@ from itertools import combinations, permutations
 import os
 import enum
 
-# Enum for size units
-class SIZE_UNIT(enum.Enum):
-   BYTES = 1
-   KB = 2
-   MB = 3
-   GB = 4
-
 def convert_unit(size_in_bytes):
    """ Convert the size from bytes to other units like KB, MB or GB"""
    if 1000 <= size_in_bytes < 1000000:
