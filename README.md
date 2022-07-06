@@ -3,13 +3,15 @@ A script that will create a list of all possible combinations and permutations o
 
 <h2>Example</h2>
 =============================================================  
+
 Wordlist: ['Cat', 'Dog', 'Fish']  
 
 * Generating 16 combinations  
-* Total file size: 140 bytes  
+* Total file size: 140 bytes
+
 =============================================================  
 
-Output file:    
+**Output file:**  
 Cat  
 Dog  
 Fish  
