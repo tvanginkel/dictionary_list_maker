@@ -8,6 +8,6 @@ do
 clear
 echo "*********************************** REQUEST # $i"
 echo
-echo R | openssl s_client -connect $1:443 -servername $1 2>/dev/null;
+echo R | curl https://cnsabadell.deporsite.net 2>&1;
 COUNT=`expr $COUNT + 1`
 done
