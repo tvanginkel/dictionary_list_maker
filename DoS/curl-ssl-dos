@@ -6,7 +6,7 @@ read -sn 1 -p "Press any key to continue..."
 for i in `seq 1 $2`;
 do
 echo "*********************************** REQUEST # $i"
-echo
-echo R |curl $1 --cookie "XSRF-TOKEN=eyJpdiI6ImxqaG41Qyt3RjczQ1EzZ20wWW90M3c9PSIsInZhbHVlIjoiaE9Xd3NZaVpMczNzTmk3NmNuVHFHQ0JWVzBRa2wwNTRxNjlweCt3RXhYNGY1MVFIc1dMblE1QXo2WWpSa2pjNiIsIm1hYyI6IjczOGEyYjA2ZjRmN2M5Y2JhZTRiOThhNDQ3Y2ExYjIxM2UyNzQwMmEyNzFiZTM1NTc1YzRmYWZjM2M0MmJlMzIifQ%3D%3D" -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2"}' 2>&1;
+echo R | curl -c cookies.txt $1
+echo R | curl $1 -b cookies.txt -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2", "token":"_GWxgem3nLLtL8BH7x3ViwiimBAKM9blLXOWRg3gr"}' 2>&1;
 COUNT=`expr $COUNT + 1`
 done
