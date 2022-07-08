@@ -8,6 +8,6 @@ do
 clear
 echo "*********************************** REQUEST # $i"
 echo
-echo R | curl $1 2>&1;
+echo R | curl $1 -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2"}' 2>&1;
 COUNT=`expr $COUNT + 1`
 done
