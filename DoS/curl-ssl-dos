@@ -8,6 +8,6 @@ do
 clear
 echo "*********************************** REQUEST # $i"
 echo
-echo R | curl https://cnsabadell.deporsite.net 2>&1;
+echo R | curl $1 2>&1;
 COUNT=`expr $COUNT + 1`
 done
