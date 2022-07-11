@@ -7,6 +7,6 @@ for i in `seq 1 $2`;
 do
 echo "*********************************** REQUEST # $i"
 echo R | curl -c cookies.txt $1
-echo R | curl $1 -b cookies.txt -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2", "token":"_GWxgem3nLLtL8BH7x3ViwiimBAKM9blLXOWRg3gr"}' 2>&1;
+echo R | curl $1 -X POST -H "Content-Type: application/json" -d '{"key1":"value1", "key2":"value2"} 2>&1;
 COUNT=`expr $COUNT + 1`
 done
