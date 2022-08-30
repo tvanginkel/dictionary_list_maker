@@ -28,5 +28,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASS }}
           port: ${{ secrets.PORT }}
-          script: sh pentesting_tools/deploy.sh
+          script: sh pentesting_tools/deployment.sh
         
