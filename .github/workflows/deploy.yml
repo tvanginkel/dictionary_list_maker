@@ -26,7 +26,7 @@ jobs:
         with: 
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PASS }}
+          password: ${{ secrets.PASS }}
           port: ${{ secrets.PORT }}
-          script: sh yourscript.sh
+          script: sh deploy.sh
         
