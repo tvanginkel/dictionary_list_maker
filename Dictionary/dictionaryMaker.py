@@ -17,12 +17,12 @@ def convert_unit(size_in_bytes):
 path = "wordlist.txt"
 
 # The list of words to use
-words = ['Word1', 'Word2', 'Word3'] 
+words = ['1', '2', '3', '4','5','6','7','8','0','9'] 
 
 print("=============================================================")
 print("Wordlist: " + str(words) + "\n")
 # Create/Open the file and empty it
-open(path, "w").close()
+# open(path, "w").close()
 
 # Open the file in append mode
 f = open(path, "a")
